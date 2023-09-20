@@ -47,7 +47,8 @@ export const Categories = ({
            bg-primary/10
            hover:opacity-75
            transistion
-            `)}>
+            `,!categoryId ? "bg-primary/25" : "bg/primary/10"
+            )}>
             Newest
            </button>
            {data.map((item) =>
@@ -67,8 +68,9 @@ export const Categories = ({
             rounded-md
             bg-primary/10
             hover:opacity-75
-            transistion
-             `)}>
+            transistion`,
+            item.id === categoryId ? "bg-primary/25" : "bg-primary/10"
+            )}>
              {item.name}
             </button>
            )}
