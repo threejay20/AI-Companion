@@ -1,18 +1,18 @@
 generator client {
   provider = "prisma-client-js"
-  previewFeatures = ["fullTextSearch", "fullTextIndex" ]
+  previewFeatures = ["fullTextSearch", "fullTextIndex"]
 }
+
 datasource db {
   provider = "mysql"
   url = env("DATABASE_URL")
   relationMode = "prisma"
 }
 
-
 model Category {
   id            String @id @default(uuid())
   name          String
-  companions     Companion[]
+  companions    Companion[]
 }
 
 model Companion {
