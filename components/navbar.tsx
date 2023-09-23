@@ -29,7 +29,7 @@ export const Navbar = () => {
                 "hidden md:block text-xl md:text-3xl font-bold text-primary",
                 font.className
                 )}>
-                companion.ai
+                Lonely Nig App
             </h1>
             </Link>
         </div>
