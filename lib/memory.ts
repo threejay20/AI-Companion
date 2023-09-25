@@ -4,6 +4,7 @@ import { OpenAIEmbeddings } from "langchain/embeddings/openai"; // Embeddings fo
 import { PineconeClient } from "@pinecone-database/pinecone"; // Pinecone database client for vector storage
 import { PineconeStore } from "langchain/vectorstores/pinecone"; // Vector store using Pinecone
 
+
 // Define a type for CompanionKey, representing the key to access companion-specific data
 export type CompanionKey = {
   companionName: string; // Companion's name
