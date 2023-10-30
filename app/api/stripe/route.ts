@@ -51,7 +51,7 @@ export async function GET() {
       line_items: [
         {
           price_data: {
-            currency: "USD",
+            currency: "CDN",
             product_data: {
               name: "Companion Pro",
               description: "Create Custom AI Companions"
